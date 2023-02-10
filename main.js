@@ -46,6 +46,9 @@ search_location.addEventListener("keypress", (event) =>{
             humidity.textContent = data.main.humidity + "%"
             seaLevel.textContent = data.main.sea_level
             wind.textContent = data.wind.speed + " hpm"
+            country.textContent = data.sys.country;
+            sunSet.textContent = data.sys.sunset;
+            sunRise.textContent = data.sys.sunrise;
         }).catch(() =>{
             errorContainer.style.display = "block"
         })
